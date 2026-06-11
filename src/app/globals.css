@@ -1,26 +1,88 @@
+
 @import "tailwindcss";
 
 :root {
+  /* Light mode tokens */
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #111114;                   /* darker for better contrast */
+  --muted: #4b5563;                        /* neutral-600 */
+  --muted-foreground: #6b7280;             /* neutral-500 */
+  --border: #e5e7eb;                       /* neutral-200 */
+  --card: #ffffff;
+  --card-foreground: #111114;
+  --radius: 16px;
 }
 
-@theme inline {
+/* Map tokens to Tailwind color utilities */
+:root {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
+
+/* Dark mode tokens */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #e7e7ea;                 /* a bit brighter than #ededed */
+    --muted: #a1a1aa;                       /* zinc-400 */
+    --muted-foreground: #c7c7d1;            /* lighter text for secondary copy */
+    --border: #3f3f46;                      /* zinc-700 for clearer borders */
+    --card: #111113;                         /* near-black card */
+    --card-foreground: #f1f1f3;
   }
 }
 
+/* Support class-based dark mode via next-themes */
+.dark {
+  --background: #0a0a0a;
+  --foreground: #e7e7ea;                 /* a bit brighter than #ededed */
+  --muted: #a1a1aa;                       /* zinc-400 */
+  --muted-foreground: #c7c7d1;            /* lighter text for secondary copy */
+  --border: #3f3f46;                      /* zinc-700 for clearer borders */
+  --card: #111113;                        /* near-black card */
+  --card-foreground: #f1f1f3;
+}
+
+/* Explicit light mode support so user override beats system dark */
+.light {
+  --background: #ffffff;
+  --foreground: #111114;
+  --muted: #4b5563;            /* neutral-600 */
+  --muted-foreground: #6b7280; /* neutral-500 */
+  --border: #e5e7eb;           /* neutral-200 */
+  --card: #ffffff;
+  --card-foreground: #111114;
+}
+
+/* Base styles */
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Utility helpers (optional if you want semantic classes) */
+.text-muted { color: var(--muted-foreground); }
+.bg-card { background: var(--card); }
+.text-card { color: var(--card-foreground); }
+.border-default { border-color: var(--border); }
+
+/* --- Contrast fixes for existing Tailwind classes on dark backgrounds --- */
+/* Many components use text-neutral-700/600 which is too dim in dark mode. */
+@media (prefers-color-scheme: dark) {
+  .text-neutral-700 { color: #e5e7eb !important; }   /* neutral-200 */
+  .text-neutral-600 { color: #e5e7eb !important; }
+  .text-neutral-500 { color: #d4d4d8 !important; }   /* zinc-300 */
+  .border-neutral-800 { border-color: #3f3f46 !important; }
+  .border { border-color: var(--border) !important; }
+}
+
