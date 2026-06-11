@@ -1,5 +1,15 @@
 
+
 @import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #07070A;
+}
 
 :root {
   /* Light mode tokens */
@@ -65,9 +75,47 @@
 
 /* Base styles */
 body {
-  background: var(--background);
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: #07070A;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgba(76, 201, 240, 0.28);
+  color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #07070A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #7209B7, #4CC9F0);
+  border-radius: 999px;
+  border: 2px solid #07070A;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #8b20d6, #62d7ff);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* Utility helpers (optional if you want semantic classes) */
@@ -84,5 +132,17 @@ body {
   .text-neutral-500 { color: #d4d4d8 !important; }   /* zinc-300 */
   .border-neutral-800 { border-color: #3f3f46 !important; }
   .border { border-color: var(--border) !important; }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
