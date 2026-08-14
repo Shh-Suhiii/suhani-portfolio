@@ -33,13 +33,11 @@ export default function About() {
           <div className="about-heading">
             <p className="about-kicker">About Me</p>
             <h2>
-              Sirf code nahi,
-              <span> experience build karti hoon.</span>
+              Designing experiences,
+              <span> not just interfaces.</span>
             </h2>
             <p>
-              Main Suhani Rai — Computer Applications student, developer aur UI/UX
-              explorer. Mujhe simple ideas ko clean digital products mein convert
-              karna pasand hai.
+              Coffee ☕, code 💻 aur creative ideas — Ye mera passion hai. Humesha kuch naya build karne aur improve karne ki koshish rehti hai.
             </p>
           </div>
 
@@ -67,9 +65,7 @@ export default function About() {
             </div>
 
             <p className="about-story-text">
-              Abhi mera focus hai better development skills, stronger design sense,
-              aur real-world projects banana. Yeh portfolio meri academics, projects,
-              designs aur growth ka digital space hai.
+              Har project ke saath confidence bhi build hota hai aur perspective bhi. Ye portfolio un ideas, experiments aur experiences hai jo mujhe daily improve krte hai.
             </p>
 
             <div className="about-traits">
