@@ -30,8 +30,7 @@ export default function Hero() {
           </h1>
 
           <p className="hero-description">
-            Developer, designer aur curious creator — ideas ko clean, useful aur
-            visually pleasing digital experiences mein convert karti hoon.
+            Curious by nature, creative by choice, and always excited to build something meaningful. I enjoy turning ideas into intuitive digital experiences that are simple, functional, and enjoyable to use.
           </p>
 
           <div className="hero-skills">

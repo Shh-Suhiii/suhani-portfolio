@@ -41,9 +41,7 @@ export default function DesignGallery() {
             <span> products feel alive.</span>
           </h2>
           <p>
-            UI concepts, poster designs, branding ideas aur creative visuals —
-            jahan design experiments ko polished digital experiences mein convert
-            karti hoon.
+            A collection of UI explorations, branding concepts, posters, and creative experiments that reflect my approach to visual storytelling and design.
           </p>
           <div className="design-divider" />
         </div>
