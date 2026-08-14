@@ -4,6 +4,17 @@ import { useState } from "react";
 
 const projects = [
   {
+    title: "TeaTame",
+    tag: "Social Platform",
+    description:
+      "An anonymous social platform where users can share text, images, videos, and voice posts, interact through anonymous comments, and connect freely without revealing their identity.",
+    tech: "Next.js • TypeScript • Supabase",
+    emoji: "☕",
+    logo: "/images/projects/teatame-logo.png",
+    accent: "from-amber-500/20 to-orange-500/10",
+    live: "https://teatame.vercel.app",
+  },
+  {
     title: "LogicalFetch Website",
     tag: "Featured Project",
     description:
