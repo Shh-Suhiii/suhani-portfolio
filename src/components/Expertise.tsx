@@ -2,7 +2,7 @@ const expertise = [
   {
     title: "Frontend Development",
     description:
-      "Modern, responsive and interactive web experiences with reusable components, smooth interfaces and production-ready UI.",
+      "Building responsive, accessible, and interactive web experiences with reusable components, thoughtful interfaces, and production-ready architecture.",
     tools: [
       "Next.js",
       "React",
@@ -16,7 +16,7 @@ const expertise = [
   {
     title: "Mobile Development",
     description:
-      "Cross-platform mobile applications with structured navigation, authentication and responsive user experiences.",
+      "Developing cross-platform mobile applications with intuitive navigation, authentication, API integration, and responsive user experiences.",
     tools: [
       "Flutter",
       "Dart",
@@ -28,7 +28,7 @@ const expertise = [
   {
     title: "Backend & Database",
     description:
-      "Server-side applications, APIs, authentication, database architecture and full-stack integrations.",
+      "Developing server-side functionality, RESTful APIs, authentication systems, database structures, and reliable full-stack integrations.",
     tools: [
       "Python",
       "Flask",
@@ -42,7 +42,7 @@ const expertise = [
   {
     title: "UI/UX & Product Design",
     description:
-      "Clean interfaces, brand identities and visual systems designed around usability, consistency and modern aesthetics.",
+      "Designing intuitive interfaces, visual identities, and cohesive design systems with a focus on usability, consistency, and modern aesthetics.",
     tools: [
       "Figma",
       "Canva",
@@ -83,14 +83,14 @@ export default function Expertise() {
           </p>
 
           <h2>
-            Tools jo ideas ko
-            <span> products mein badalte hain.</span>
+            Technologies behind
+            <span> the products I build.</span>
           </h2>
 
           <p>
-            Development, design aur backend ke woh tools jinke
-            saath main modern, useful aur clean digital products
-            build karti hoon.
+            A combination of development, design, and backend technologies
+            I use to transform ideas into functional, scalable, and
+            thoughtfully designed digital products.
           </p>
 
           <div className="expertise-divider" />
@@ -143,13 +143,14 @@ export default function Expertise() {
               </p>
 
               <h3>
-                Also working with
+                Additional Tools & Technologies
               </h3>
             </div>
 
             <p className="expertise-extra-description">
-              Tools and technologies I use across development,
-              deployment and everyday product workflows.
+              Additional technologies and development tools I work with
+              across version control, deployment, API testing, integrations,
+              and evolving areas of technical exploration.
             </p>
           </div>
 
