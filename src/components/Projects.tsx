@@ -15,6 +15,17 @@ const projects = [
     live: "https://teatame.vercel.app",
   },
   {
+    title: "OstrenFit",
+    tag: "E-Commerce",
+    description:
+      "A modern fashion e-commerce platform built for a seamless shopping experience, featuring product discovery, wishlist, cart, secure checkout, discounts, user accounts, and customizable products.",
+    tech: "Next.js • TypeScript • Flask • PostgreSQL",
+    emoji: "👕",
+    logo: "/images/projects/ostrenfit-logo2.png",
+    accent: "from-sky-500/20 to-blue-900/10",
+    live: "https://ostrenfit.vercel.app",
+  },
+  {
     title: "LogicalFetch Website",
     tag: "Featured Project",
     description:

@@ -1,4 +1,4 @@
-import { Mail, Github, Linkedin, MapPin } from "lucide-react";
+import { Mail, Github, Linkedin, MapPin, Instagram } from "lucide-react";
 const contactLinks = [
   {
     icon: <Mail size={18} />,
@@ -17,6 +17,17 @@ const contactLinks = [
     label: "LinkedIn",
     value: "linkedin.com/in/suhani-rai-sr00",
     href: "https://www.linkedin.com/in/suhani-rai-sr00",
+  },
+    {
+
+    icon: <Instagram size={18} />,
+
+    label: "Instagram",
+
+    value: "@shh_suhiii",
+
+    href: "https://www.instagram.com/shh_suhiii/",
+
   },
   {
     icon: <MapPin size={18} />,
