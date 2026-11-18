@@ -139,7 +139,7 @@ export default function Footer() {
             </div>
 
             <p className="text-sm text-zinc-500">
-              Web Developer • UI Designer • Freelancer
+              Web & App Developer • UI/UX Designer • Freelancer 
             </p>
 
           </div>
