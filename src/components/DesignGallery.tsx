@@ -13,7 +13,7 @@ const designs = [
     subtitle: "Anonymous Social Platform",
     description:
       "A playful yet minimal identity designed for an anonymous social platform built around conversations and expression.",
-    image: "/images/projects/teatame-logo.png",
+    image: "/images/projects/teatame-logo-new.png",
     accent: "design-card-two",
     note: "Logo Design",
   },
